@@ -56,14 +56,6 @@ public class Polynomial
     }
 
 
-
-    public int evaluate(int x) {
-        int p = 0;
-        for (int i = degree; i >= 0; i--)
-            p = coef[i] + (x * p);
-        return p;
-    }
-
     @Override
     public String toString() {
         if      (degree == -1) return "0";
